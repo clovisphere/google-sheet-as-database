@@ -18,10 +18,15 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('credentials.json
 client = gspread.authorize(credentials)
 
 # open/read @google sheet (the sheet should exist)
-sheet = client.open('Programming Books').sheet1
+# we'd have done "client.open(..).sheet1", and it woould have worked
+# but I wanted to select the 'sheet' by its name/title
+sheet = client.open('Programming Books').worksheet('books')
 # retrieve all records
 records = sheet.get_all_records()
 # some pretty print magic
 pp = pprint.PrettyPrinter(indent=4, compact=True)
 # retrieve all data currently in database (google sheet)
 pp.pprint(records)
+# Let's update a book
+sheet.update_acell('B3', 'Alan A. A. Donovan, Brian W. Kernighan')
+

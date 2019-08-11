@@ -9,7 +9,7 @@ Create a new project on [Google API Console](https://console.developers.google.c
 enable both the Google Drive and Google Sheet APIs, 
 follow this [guide](https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html).
 
-I am assuming that you have a created a spreasheet (on your Google Drive).
+I am assuming that you have created a spreasheet (on your Google Drive).
 ![drive dashboard](img/drive.png)
 ![a google sheet](img/sheet.png)
 

@@ -24,9 +24,11 @@ so make sure you have [Python](https://www.python.org/) installed.
 $> cd {APP_DIRECTORY} && pip install -r requirements.txt
 ```
 
-**Run test(s)**:
 ```
 $> python app.py
 ```
 
+###### Some cool articles
+- [Google Sheet API](https://developers.google.com/sheets/api/guides/authorizing) guide.
+- [gspread](https://gspread.readthedocs.io/en/latest/index.html) guide.
 

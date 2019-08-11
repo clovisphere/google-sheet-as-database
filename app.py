@@ -14,6 +14,7 @@ scope = [
     'https://www.googleapis.com/auth/drive.file',
     'https://www.googleapis.com/auth/drive'
 ]
+# rename the downloaded credential .json to 'credentials.json' or change the below .json name
 credentials = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
 client = gspread.authorize(credentials)
 

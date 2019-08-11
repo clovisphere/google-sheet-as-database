@@ -29,4 +29,6 @@ pp = pprint.PrettyPrinter(indent=4, compact=True)
 pp.pprint(records)
 # Let's update a book
 sheet.update_acell('B3', 'Alan A. A. Donovan, Brian W. Kernighan')
-
+# add new row to cell
+row = ['5', 'Brian W. Kernighan, Dennis M. Ritchie', 'The C Programming Language, 2nd Edition', '1988']
+sheet.append_row(row, 'USER_ENTERED')

@@ -18,7 +18,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('credentials.json
 client = gspread.authorize(credentials)
 
 # open/read @google sheet (the sheet should exist)
-sheet = client.open('Programming Books').books
+sheet = client.open('Programming Books').sheet1
 # retrieve all records
 records = sheet.get_all_records()
 # some pretty print magic
